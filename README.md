@@ -1,4 +1,4 @@
-# Crowdfunding-GoFundMe-Project
+# GoFundMe-Healthcare-Cost-Evaluation
 Online fundraising platforms are now becoming a very popular means to raise money for charity. Hence, through this project, we evaluate the use of the most popular fundraising platform - [GoFundMe](https://www.gofundme.com/) for covering health care related costs.
 
 ## Environment Setup
