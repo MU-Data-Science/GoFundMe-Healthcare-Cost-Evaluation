@@ -1,0 +1,7 @@
+six
+spacy
+onnxruntime
+ipython
+tensorflow==1.14
+nltk
+simple_sentence_segment-0.1.3.tar.gz

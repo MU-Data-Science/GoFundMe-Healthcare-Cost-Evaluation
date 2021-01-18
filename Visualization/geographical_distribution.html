@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geographical Distribution of the Prevalence of Online Medical Fundraisers</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript"
+            src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/fusioncharts@3.15.0-sr.1/maps/fusioncharts.usa.js"></script>
+    <script>
+        $('document').ready(function () {
+            $("#chart-container").insertFusionCharts({
+                type: "usa",
+                width: "100%",
+                height: "100%",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Geographical Distribution of Online Medical Fundraisers",
+                        subcaption: "Number of Medical Fundraisers per 100,000 Population",
+                        entityfillhovercolor: "#F8F8E9",
+                        numbersuffix: "",
+                        showlabels: "1",
+                        borderthickness: "0.4",
+                        theme: "fusion",
+                        entitytooltext:
+                            "<b>$lname</b> has an average of <b>$datavalue</b>"
+                    },
+                    colorrange: {
+                        minvalue: "20",
+                        code: "#00A971",
+                        gradient: "1",
+                        color: [
+                            {
+                                minvalue: "50",
+                                maxvalue: "100",
+                                code: "#EFD951"
+                            },
+                            {
+                                minvalue: "100",
+                                maxvalue: "150",
+                                code: "#FD8963"
+                            },
+                            {
+                                minvalue: "150",
+                                maxvalue: "200",
+                                code: "#D60100"
+                            }
+                        ]
+                    },
+                    data: [
+                        {id: 'ME', value: 139.38095990214887},
+                        {id: 'AK', value: 137.2001703174528},
+                        {id: 'MT', value: 134.79385393334368},
+                        {id: 'OR', value: 131.14394792284207},
+                        {id: 'WA', value: 129.629127016695},
+                        {id: 'UT', value: 127.8598815603548},
+                        {id: 'CO', value: 127.53350451940504},
+                        {id: 'ND', value: 127.08616574418879},
+                        {id: 'ID', value: 124.46540158875398},
+                        {id: 'NH', value: 121.09071004881609},
+                        {id: 'VT', value: 121.06013401597352},
+                        {id: 'MN', value: 116.03832151670748},
+                        {id: 'WY', value: 113.75503827796621},
+                        {id: 'FL', value: 104.44425382665219},
+                        {id: 'AZ', value: 103.61630895048222},
+                        {id: 'NV', value: 102.76717547703682},
+                        {id: 'SD', value: 100.0384055487969},
+                        {id: 'TX', value: 96.88885861504612},
+                        {id: 'KS', value: 91.31094018343887},
+                        {id: 'HI', value: 91.27602907943607},
+                        {id: 'NM', value: 89.36482014491851},
+                        {id: 'OK', value: 88.75911250045792},
+                        {id: 'RI', value: 88.7094567112007},
+                        {id: 'MA', value: 88.69038672886268},
+                        {id: 'NE', value: 88.01734931325635},
+                        {id: 'GA', value: 87.0138097388157},
+                        {id: 'MO', value: 83.91221310365269},
+                        {id: 'MI', value: 82.88237538458698},
+                        {id: 'SC', value: 81.2440328327796},
+                        {id: 'VA', value: 81.1332204646506},
+                        {id: 'NC', value: 79.73976336407577},
+                        {id: 'CT', value: 79.70605743741123},
+                        {id: 'CA', value: 78.7370645663911},
+                        {id: 'TN', value: 78.58863273051276},
+                        {id: 'WI', value: 77.52589387286616},
+                        {id: 'IA', value: 77.3751943519287},
+                        {id: 'IN', value: 76.06327336369465},
+                        {id: 'IL', value: 74.98033709203615},
+                        {id: 'MD', value: 74.76648485330155},
+                        {id: 'AR', value: 74.19417437594844},
+                        {id: 'NJ', value: 72.95424957948593},
+                        {id: 'LA', value: 72.02733025171352},
+                        {id: 'PA', value: 71.60964823263562},
+                        {id: 'DC', value: 71.47262425573366},
+                        {id: 'OH', value: 70.24851764048353},
+                        {id: 'DE', value: 67.46789557341994},
+                        {id: 'NY', value: 67.29674787634627},
+                        {id: 'AL', value: 66.75218221581551},
+                        {id: 'WV', value: 62.61506274998526},
+                        {id: 'KY', value: 59.337401264293},
+                        {id: 'MS', value: 54.58932341409471}
+                    ]
+                }
+            });
+        });
+    </script>
+    <style>
+        #chart-container {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!--Ref : https://www.fusioncharts.com/fusionmaps/examples/average-temperature-of-us-states-->
+<div id="chart-container"></div>
+</body>
+</html>

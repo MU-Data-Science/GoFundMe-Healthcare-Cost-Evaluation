@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crowdsourced Online Fundraising Campaigns</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript"
+            src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script>
+        $('document').ready(function () {
+            $("#chart-container").insertFusionCharts({
+                type: "mscolumn2d",
+                width: "100%",
+                height: "100%",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Crowdsourced Online Fundraising Campaigns",
+                        subcaption: "2010-2018",
+                        xaxisname: "Years",
+                        yaxisname: "Total Number of Campaigns",
+                        formatnumberscale: "1",
+                        plottooltext:
+                            "<b>$dataValue</b> for <b>$seriesName</b> in $label",
+                        theme: "fusion",
+                        drawcrossline: "1"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    label: "2010"
+                                },
+                                {
+                                    label: "2011"
+                                },
+                                {
+                                    label: "2012"
+                                },
+                                {
+                                    label: "2013"
+                                },
+                                {
+                                    label: "2014"
+                                },
+                                {
+                                    label: "2015"
+                                },
+                                {
+                                    label: "2016"
+                                },
+                                {
+                                    label: "2017"
+                                },
+                                {
+                                    label: "2018"
+                                }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Fundraisers for Cancer Conditions",
+                            data: [
+                                {
+                                    value: "15"
+                                },
+                                {
+                                    value: "86"
+                                },
+                                {
+                                    value: "416"
+                                },
+                                {
+                                    value: "1646"
+                                },
+                                {
+                                    value: "4423"
+                                },
+                                {
+                                    value: "13690"
+                                },
+                                {
+                                    value: "11888"
+                                },
+                                {
+                                    value: "20404"
+                                },
+                                {
+                                    value: "45784"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Fundraisers for Cardiovascular Conditions",
+                            data: [
+                                {
+                                    value: "2"
+                                },
+                                {
+                                    value: "6"
+                                },
+                                {
+                                    value: "26"
+                                },
+                                {
+                                    value: "152"
+                                },
+                                {
+                                    value: "398"
+                                },
+                                {
+                                    value: "1383"
+                                },
+                                {
+                                    value: "1118"
+                                },
+                                {
+                                    value: "2308"
+                                },
+                                {
+                                    value: "5000"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Fundraisers for Neurological Conditions",
+                            data: [
+                                {
+                                    value: "7"
+                                },
+                                {
+                                    value: "42"
+                                },
+                                {
+                                    value: "235"
+                                },
+                                {
+                                    value: "883"
+                                },
+                                {
+                                    value: "2348"
+                                },
+                                {
+                                    value: "6895"
+                                },
+                                {
+                                    value: "5961"
+                                },
+                                {
+                                    value: "9857"
+                                },
+                                {
+                                    value: "22735"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Fundraisers for Trauma Conditions",
+                            data: [
+                                {
+                                    value: "4"
+                                },
+                                {
+                                    value: "28"
+                                },
+                                {
+                                    value: "159"
+                                },
+                                {
+                                    value: "717"
+                                },
+                                {
+                                    value: "2136"
+                                },
+                                {
+                                    value: "7114"
+                                },
+                                {
+                                    value: "6987"
+                                },
+                                {
+                                    value: "11764"
+                                },
+                                {
+                                    value: "24952"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            });
+        });
+    </script>
+    <style>
+        #chart-container {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!--Ref : https://www.fusioncharts.com/fusionmaps/examples/average-temperature-of-us-states-->
+<div id="chart-container"></div>
+</body>
+</html>

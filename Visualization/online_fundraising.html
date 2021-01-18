@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crowdsourced Online Fundraising Campaigns</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript"
+            src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script>
+        $('document').ready(function () {
+            $("#chart-container").insertFusionCharts({
+                type: "mscolumn2d",
+                width: "100%",
+                height: "100%",
+                dataFormat: "json",
+                dataSource: {
+                    chart: {
+                        caption: "Crowdsourced Online Fundraising Campaigns",
+                        subcaption: "2010-2018",
+                        xaxisname: "Years",
+                        yaxisname: "Total Number of Campaigns",
+                        formatnumberscale: "1",
+                        plottooltext:
+                            "<b>$dataValue</b> for <b>$seriesName</b> in $label",
+                        theme: "fusion",
+                        drawcrossline: "1"
+                    },
+                    categories: [
+                        {
+                            category: [
+                                {
+                                    label: "2010"
+                                },
+                                {
+                                    label: "2011"
+                                },
+                                {
+                                    label: "2012"
+                                },
+                                {
+                                    label: "2013"
+                                },
+                                {
+                                    label: "2014"
+                                },
+                                {
+                                    label: "2015"
+                                },
+                                {
+                                    label: "2016"
+                                },
+                                {
+                                    label: "2017"
+                                },
+                                {
+                                    label: "2018"
+                                }
+                            ]
+                        }
+                    ],
+                    dataset: [
+                        {
+                            seriesname: "Fundraisers for Medical Conditions",
+                            data: [
+                                {
+                                    value: "42"
+                                },
+                                {
+                                    value: "235"
+                                },
+                                {
+                                    value: "1140"
+                                },
+                                {
+                                    value: "4689"
+                                },
+                                {
+                                    value: "25902"
+                                },
+                                {
+                                    value: "39464"
+                                },
+                                {
+                                    value: "50744"
+                                },
+                                {
+                                    value: "66036"
+                                },
+                                {
+                                    value: "119373"
+                                }
+                            ]
+                        },
+                        {
+                            seriesname: "Total Online Fundraisers",
+                            data: [
+                                {
+                                    value: "93"
+                                },
+                                {
+                                    value: "699"
+                                },
+                                {
+                                    value: "3784"
+                                },
+                                {
+                                    value: "15514"
+                                },
+                                {
+                                    value: "70091"
+                                },
+                                {
+                                    value: "145329"
+                                },
+                                {
+                                    value: "183627"
+                                },
+                                {
+                                    value: "187037"
+                                },
+                                {
+                                    value: "450281"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            });
+        });
+    </script>
+    <style>
+        #chart-container {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<!--Ref : https://www.fusioncharts.com/fusionmaps/examples/average-temperature-of-us-states-->
+<div id="chart-container"></div>
+</body>
+</html>
