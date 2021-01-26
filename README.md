@@ -11,6 +11,8 @@ To setup the models and install the required libraries:
 cd Scripts/ && ./node_setup.sh
 ``` 
 
+Make sure the variables `DOWNLOAD_DIR` and `PRE_COMPUTED_DATA_URL` are pointing to the correct input files.
+
 To set the environment variable required for Clinical Concept Extraction.
 ```
 export CCE_ASSETS=$(pwd)/Clinical_CE/cce_assets
@@ -21,6 +23,9 @@ To reproduce the results, follow the steps described [here](Validate_Data/README
 
 ## Publication
 Suveen Angraal, Arun Zachariah, Raaisa Raaisa, Rohan Khera, Praveen Rao, Harlan M Krumholz, and John A Spertus - **Evaluation of Internet-Based Crowdsourced Fundraising to Cover Health Care Costs in the United States.** In JAMA Network Open, 4(1), 2021 [[PDF](https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2774737/angraal_2021_ld_200198_1609274555.84741.pdf)]
+
+## Data Request
+If you need the data used for the above publication, please contact the lead author.
 
 ## References
 * [GoFundMe Web Scraper](https://github.com/lmeninato/GoFundMe)
